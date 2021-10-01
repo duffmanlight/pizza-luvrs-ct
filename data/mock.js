@@ -12,9 +12,10 @@ const mockPizzas = [
 ]
 
 module.exports.hydrate = async () => {
-  users.create('ryan', 'pass', () => {})
-  users.create('jim', 'pass', () => {})
-  users.create('kathy', 'pass', () => {})
+  users.create('ryan', 'pass', () => { })
+  users.create('jim', 'pass', () => { })
+  users.create('kathy', 'pass', () => { })
+  users.create('chris', 'pass', () => { })
 
   await pizzas.init()
   for (const pizza of mockPizzas) {
